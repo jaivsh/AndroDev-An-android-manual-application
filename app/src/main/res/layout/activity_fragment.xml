@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ec0b34"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragments"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:layout_marginLeft="120dp"/>
+        <View
+            android:id="@+id/divider44"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="A fragment represents a portion of a behaviour in FragmentActivity class. A fragment has it's own layout with it's own lifecycle. A fragment can be used in multiple activities, eg. consider a navigation drawer which remains on the side even in different activities or even in different fragments. It's benefit is we can add or remove or even multiply two fragments to build a multi-pane UI. Fragments are created both in Java and XML"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Fragments in Java:"
+            android:layout_marginLeft="100dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="Fragment Manager- This handles the transactions between fragments. A transaction is a way to add, replace or remove fragments. Each activity has it's own fragment manager which maintains references to all fragments inside an activity through getFragmentManager() function."/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/fragment_lifecycle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="60dp"
+            android:text="Fragment lifecycle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Steps for creating fragment in Java-\n 1. Create a java class that extends Fragment.\n 2. Create a separate XML layout file to design how the fragment would look like by using FrameLayout tag.\n 3. Create or use the onCreateView() method to inflate and link it's XML file.\n 4. Finally, attach the fragment inside the activity through JAVA."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Fragments in XML:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="We have to create a fragment layout in XML in order to give an appearance to the fragment.To create a fragment in XML, use the FrameLayout Parent View and then use other child views to accomplish the task.!!"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

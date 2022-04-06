@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".projects">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-5404724432369100/9548091967">
+            </com.google.android.gms.ads.AdView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80sp"
+                android:layout_marginStart="80sp"
+                android:elevation="10dp"
+                android:fontFamily="serif"
+                android:text="Tips and Tricks"
+                android:textColor="#ff9500"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:background="#3ca60b" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="SOME GENERAL TIPS"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1. Place the app's launcher icon in mipmap folder.\n 2. Get used-to with the plug'ins.\n 3. try to keed your application's size as low as possible by avoiding over-useful coding.\n 4. Always be informed of API levels of the different components of the app.\n 5. Avoid Hardcoded text.\n 6. Create separate layouts for re-usable UI elements.\n 7. Always keep your Android studio or other app- building platform updated.\n9. Be informed about the updates in the platform.\n 10. Know about as much components of studio as you can.\n 11. Avoid deep levels in layouts, it makes your UI slow.\n 12. Take the help of websites such as stackoverflow.com or developer.android.com when you run into some errors.\n 13.Don't ignore memory leaks. \n14. Use shapes and selectors as much as possible instead of images to reduce size. "
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="SOME HELPFUL WEBSITES AND RESOURCES"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1. For programming in Android, www.stackoverflow.com is the best problem solver you can have. If you stuck into any problems, just navigate to stackoerflow to find the solution.\n\n2. www.developer.android.com is the official website for android developers by google. It contains almost all of the guides, examples and resource to let you know anything you want. The most important feature is that it has information about all the topics and sub-topics of android.\n\n3. www.quara.com is the universal queries website. For any queries, just visit the website. \n\n 4. www.github.com is another website where you can find various resources for android\n\n Above all, google search is the ultimate option for finding anything desirable."
+                android:textColor="#0f3fc2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:text="Android Studio keyboard shortcuts:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Copy:\n windows:Ctrl+c\t\tMac:CMD+C\n Paste:\n windows:Ctrl+V\t\t Mac:CMD+V\n Save:\n windows: Ctrl+s\t\t Mac=CMD+s\n ClipBoard History:\n windows: Ctrl+Shift+A\t\t Mac: CMD+Shift+V\n Quick fix:\n windows:Alt+Enter\t\t Mac: Option+Enter\n Rename:\n windows: Shift+F6\t\t Mac: Shift+F6\n Safe delete:\n windows: Alt+Delete\t\t Mac:CMD+Delete\n Delete line:\n windows: Ctrl+V\t\t Mac: CMD+Backspace\n Build:\n windows: Ctrl+F9\t\tMac: CMD+F9\n Build and Run:\n windows: Shift+F10\t\t Mac: Ctrl+R \n\n For more android shortcuts, make a visit on developer.android.com/studio/intro/Keyboard-shortcuts page ..."
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:text="Play Store Monetization and Optimization"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="After successfully creating the app, publishing your app on google play or any other app store you might think that the work is over. But the reality is that actual work is now begun. You need to promote your app through proper marketing stratigies. Play store optimization or ASO is the way to improve the rankings of your app in google play store. In google play, ASO can go a long way. You might develop some marketing strategies for your app to be able to be seen by more people. Some of these strategies are- "
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="1. Keywords- keywords are of much importance in an ASO. A proper keyword can make your app easily found on store and be able to downloaded by most of the people. you can find a wide range of Play store optimization tools that are highly relevant for picking best keywords for your app.\n 2. App's Title- A great title can give a boost to ASO. So pick a great title that catches people's attention.\n 3. App's Icon- A great and eye- catching icon can improve the ASO rankings of your app. Make sure to have an excellent icon for your app.\n Description and Screenshots- Description  should be detailed and hassle-free. Also just like app's icon, screenshots should be best picked and show app's main components."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

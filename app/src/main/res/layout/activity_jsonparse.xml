@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jsonparse">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ff7b00"
+        android:text="JSON Parsing"/>
+        <View
+            android:id="@+id/divider50"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="All the JSON nodes start with some specific rules of code as already discussed previously. Therefore,\n If a node starts with the square brackets, it implies that is is an array. So, we should use getJSONArray() method.\n While, if the nodes starts with curly brackets, it implies that it is an object. So, we should use getJSONObject() method. \n Now, we can easily parse the JSON to get items from an array as:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Note:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="- For string value, use getString(STRINGNAME) function\n- For boolean value,use getBoolean(BOOLEANNAME) function\n- For integer value, use getInt(INTEGERNAME) function\n- For float value, use getFloat(FLOATNAME) function."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="For getting items from an array, consider this JSON file:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="JSON :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="String JSOND=&quot;{\n \&quot;node1\&quot;:{\n
+            \&quot;name1\&quot;:\&quot;value1\&quot;,\n \t\&quot;name2\&quot;:\value2\&quot;,\n \t\&quot;name3\&quot;:\value3\&quot;,\n }\n }&quot;;\n
+                JSONObject reader=new JSONObject(JSONDATA);\n JSONObject ob=reader.getJSONObject(&quot;node1&quot;\n
+                String str=jObject.getString(&quot;name1&quot;);"/>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

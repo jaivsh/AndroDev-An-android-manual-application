@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sharedpreference">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ec0b34">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARED PREFERENCES"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="#ff0000"
+        android:layout_marginStart="40dp" />
+    <View
+        android:id="@+id/divider45"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="This is one of the easiest method of storing the data from an application. In this type of storage, data is stored in key-value pairs,e.g."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="                        KEYS                              PREFERENCES
+                        Name                                Austin\n                        Id                                          Msd10"/>
+        <View
+            android:id="@+id/divider46"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="We can create a new shared preference file or write on the existing one by using these methods-\n\n getSharedPreferences()- This can be used if we need multiple shared preference files identified by same name, which is specified on first parameter of the function.\n\n getPreferences()- We can use this from an activity or app component if we need only one shared preference in our file. "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="->Writing to shared preferences-"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="To write a shared preference, create a reference of SharedPreferences and create SharedPreferences.editor() by calling edit() on the sharedPreferences. Alternatively, we can use comit() to write data to SharedPreferences"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="->Reading from shared preferences-"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="To retrive values from a shared preference, call the methods such as getInt() to get integer values and getString() to get string values etc..."/>
+        </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

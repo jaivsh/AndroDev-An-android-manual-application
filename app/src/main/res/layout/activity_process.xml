@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".process">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#f2a706"
+            android:text="Android Process-"
+            android:fontFamily="serif"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:text="A process can be defined as an instance of the application running on the android device. Since android is based on linux, so Android system starts a new Linux process for the application with a single thread of execution.  By default, all compoments of the application run in the same process. However, we could modify this and make a compoment of application to execute with a different process."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Changing the process of an app-component:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="For declaring a new process, use android:process tag inside the activity declaration in Manifest file. Generally, there are four app components whose process can be changed:\n1. Activity\n 2. Services\n 3. Content Providers\n 4. Receivers."/>
+
+        <View
+            android:id="@+id/divider57"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ffb700" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Process are killed when there is space needed for more important processes. To kill a process, Android follows a set of rules for deciding which process to kill. This rule is depicted in the following diagram:"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/process"
+            android:layout_marginStart="70dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

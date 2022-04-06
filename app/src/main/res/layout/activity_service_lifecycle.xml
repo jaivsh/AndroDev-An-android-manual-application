@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".service_lifecycle">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service lifecycle"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp" />
+    <View
+        android:id="@+id/divider44"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/service_lifecycle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="The above diagram shows service lifecycle. The diagram on the left shows the lifecycle when service is created with startService() and the figure on the left shows lifecycle when the service is created with bindService()."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Java code for implementing onclick methods of buttons in corresponding Java file :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="public class service_lifecycle extends Activity {\n
+    Button btnstart,btnstop;\n
+    \@Override\n
+    protected void onCreate(Bundle savedInstanceState) {\n
+        super.onCreate(savedInstanceState);\n
+        setContentView(R.layout.activity_service_lifecycle);\n
+        btnstart=(Button)findViewById(R.id.sservice);\n
+        btnstop=(Button)findViewById(R.id.sservice1);\n
+    }\n
+    public void Servicestart(View v)\n
+    {\n
+        Intent i=new Intent(this,Myservice.class);\n
+        startService(i);\n
+    }\n
+    public void Servicestop(View v)\n
+    {\n
+        Intent i=new Intent(this,Myservice.class);\n
+        stopService(i);\n
+    }\n
+}"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Java file for creating service :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="public class Myservice extends Service {\n
+    MediaPlayer myplayer;\n
+    public Myservice()\n
+    {}\n
+    @Override\n
+    public IBinder onBind(Intent intent)\n
+    {\n
+        throws new UnsupportedOperationException(&quot;Not implemented&quot;);\n
+    }\n
+    \@Override\n
+    public void onCreate()\n
+    {\n
+        super.onCreate();\n
+        Toast.makeText(this,&quot;onCreate() in service was called&quot;,Toast.LENGTH_SHORT).show();\n
+            myplayer=MediaPlayer.create(this,R.drawable.backgroundstudy);\n
+            }\n
+            @Override\n
+            public int onStartCommand(Intent intent,int flags,int startId)\n
+            {\n
+            myplayer.start();\n
+            return super.onStartCommand(intent,flags,startId);\n
+            }\n
+            @Override\n
+            public void onDestroy()\n
+            {\n
+            super.onDestroy();\n
+            myplayer.stop();\n
+            Toast.makeText(this,&quot;onDestroy() in service was called&quot;,Toast.LENGTH_SHORT).show();\n
+            }\n
+            }"/>
+        </HorizontalScrollView>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

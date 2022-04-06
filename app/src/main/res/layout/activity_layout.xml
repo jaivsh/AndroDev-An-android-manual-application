@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layout">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        android:text="Layouts:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:text="A layout is a subclass of ViewGroup which specifies how a particular view should be arranged inside a viewgroup, or the manner in which you want to arrange your views inside a viewgroup."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="Common Android Layouts-\n * Linear Layout\n * Relative Layout\n * Frame Layout\n * Table Layout\n *Grid Layout\n *Coordinator Layout"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"/>
+
+    <View
+        android:id="@+id/divider26"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="41dp"
+        android:background="#000000" />
+
+    <View
+        android:id="@+id/divider27"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="270dp"
+        android:background="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:textSize="15sp"
+        android:text="Linear Layout- This layout has only one goal in life, to lay out children views in a straight single row or column(depending weather orientation is set to horizontal or vertical).\n\n Relative Layout- In relative layout, the position of the children's can be described relative to each other.\n\n Frame Layout- This layout blocks out an area on the screen for a particular single view item.\n\n Table Layout- This layout arranges it's children into rows and columns.\n\n Grid Layout-It places items in arbitrary rows and columns and supporting the same weight as linear layout.\n\n Coordinator layout- It is a subclass of frame Layout that inherits it's use of layout:gravity to position the children."/>
+
+</RelativeLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

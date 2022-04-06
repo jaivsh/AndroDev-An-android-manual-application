@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".handlersloopers">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#f7a306"
+        android:fontFamily="serif"
+        android:textColorHighlight="#8cbe3e3e"
+        android:text="Handlers and Loopers-"/>
+        <View
+            android:id="@+id/divider59"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="MessageQueue:"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Android maintains a queue of tasks which are executed one after another. This property of Android is knows as MessageQueue. Messages(or tasks) are not directly added into the queue but through handlers objects."/>
+        <View
+            android:id="@+id/divider60"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Handlers:"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="A handler or Async task allows communicating back with UI thread from other background thread. It allows to send process messages and Runnable objects assocuated with a thread's MessageQueue."/>
+        <View
+            android:id="@+id/divider61"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Looper:"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="It is the class to run a message loop for a thread. Most interaction with message loop is done with the Handler class. Threads by default do not have a message loop associated with them; to create one, call prepare() in the thread that is to run the loop, and then loop() to have the process messages in loop until the loop is stopped.\n\t\t A thread can only be associated with one looper and thus with single message queue,but a looper can have many associated handlers, but they all insert messages into same MessageQueue. Thus if multiple threads tries to send send messages to a particular looper, then all of them will be processed sequentially.\n\n Note- If we try to st up another looper for the same object, it will result in Java.lang.RuntimeException. \n Only one looper can be created per thread."/>
+
+    </LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

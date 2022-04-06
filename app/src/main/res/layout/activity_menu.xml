@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ec0b34">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:layout_marginLeft="150dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="#ff0000"
+        android:layout_marginStart="150dp" />
+    <View
+        android:id="@+id/divider45"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:text="A menu is an efficient and user-friendly way to make the user select an option from a list of options given to the user as a choice. Have you encountered any of the following menu styles while using any android application??"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/menu1"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/menu2"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginStart="120dp" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/menu3"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginStart="245dp" />
+            </RelativeLayout>
+        <View
+            android:id="@+id/divider46"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1.89dp"
+            android:background="#000000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="30dp"
+                android:text="It can be concluded that there are three types of menu in Android-\n 1. Option menu\n2. Context menu\n3. Pop=up menu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="-> Option menu: The option menu is the primary collection of menu items for an activity. In this menu, we place necessary actions for app such as settings, search,email etc...\n ->Context menu:This is floating-type menu option that usually appears when the user performs a ling click on an element. It provide actions that affect some selected content or frame.\n->Pop-up menu: This menu displays a list of items that is limited to the view that invoked the menu."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Why to use a separate menu resource??"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="- It is easier to create the menu structure in XML.\n- It separates the content of the menu from the app's behavioural code\n- It allows to create alternative menu configurations for differient platform versions,screen sizes and other configurations. "/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:layout_marginLeft="50dp"
+        android:textSize="30sp"
+        android:text="Android Notifications"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="50dp" />
+    <View
+        android:id="@+id/divider30"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="A notification is a message displayed to the user outside of the application's normal UI. The are a means of informing users about several happenings and events associated with app."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:text="The notification appears as an icon in notification bar of the android compatible device."/>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="65dp"
+        android:src="@drawable/appnotification"
+        android:scaleType="fitXY"
+        android:layout_marginStart="65dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:text="To display a notification, you need to set the notification content using NotificationCompat.Builder object.Then following lines must be added to create a notification:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
+        android:text="To set the notification's icon, use setSmallIcon() function after notificationBuilder variavle.\n To set the notification's title, use setContentTitle() function after variable.\n The body text is set by setContentText().\n  To set the notification priority, use setPriority() function."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="Java code for displaying notifications:"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#9ee1a40c">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:text=" NotificationCompat.Builder mbuilder=new NotificationCompat.Builder(this);\n
+       mbuilder.setSmallIcon(R.mipmap.ic_launcher);\n
+       mbuilder.setContentTitle(&quot;It's Time for learning Android&quot;);\n
+       mbuilder.setContentText(&quot;Learn how to develop android apps with AndroDev&quot;);\n
+       mbuilder.setPriority(0);\n
+        NotificationManager nm=(NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);\n
+        assert nm != null;\n
+        nm.notify(0,mbuilder.build());"/>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Notification priority:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:text="It defines of how much value or intuitively a notification should be, or how often should it appear in the notification bar of android device. There are 5 priority levels,i.e.\n PRIORITY_MAX- 2\n PRIORITY_HIGH-1\n PRIORITY_MODERATE-0\n PRIORITY_LOW- -1\n PRIORITY_MIN- -2 "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textColor="#ff0000"
+        android:layout_marginLeft="70dp"
+        android:text="Types Of Notifications"
+        android:fontFamily="serif"
+        android:layout_marginStart="70dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="Toast Notification- It shows a message that fades away after the span of few seconds\n\n Status Notification- This shows notification messages that stays till the user response\n\n Dialog notification- This notification directly comes out of an active activity.\n\n Push notification- This type of notification surprisingly pops up on the android device."/>
+    
+
+
+</LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitybutton">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ec0b34"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_gravity="fill"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opening an activity with button from another activity-"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="5dp"
+                android:text="An activity can be opened from another activity with the help of a button. This can be done by passing an intent from one activity to another activity."
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:text="Intent- An intent is a messaging object that can be used to request an action from one app compoment to another. Use of intents are-\n * Calling an activity\n * Broadcast deliver\n * Starting a service"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icom" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv4"
+                android:layout_marginTop="10dp"
+                android:text="To open an activity,\n 1. Firstly insert a button in the activity's XML file and add an oncreate attribute followed by any user defined function name.\n 2. Head to the activity's java file and create an instance of the button followed by implementing an onclickListener for the button. It will automatically create an onClick method. In this method, give a reference of the function you just defined in the XML file.\n 3.Then create the corresponding function separately with view as parameter and define an Intent for the function.Pass (this, class name to open.class) as argument in Intent.\n4. Finally, use startActivity(intent) function to open the activity.  "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv5"
+                android:layout_marginTop="10dp"
+                android:text="To get the refrence of an activity in Java, use the following code :"
+                android:textSize="15sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv6"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#9ee1a40c">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" Button button=(Button)findViewById(R.id.cc);\n
+        button.setOnClickListener(new View.OnClickListener() {\n
+            @Override\n
+            public void onClick(View v) {\n
+                notification(v);\n
+            }\n
+        });"
+                    android:textSize="17sp" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv7"
+                android:layout_marginTop="10dp"
+                android:text="The onclick method for button click is defined as :"
+                android:textSize="15sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/tv9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv8"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#9ee1a40c">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=" public void onclickmethod(View v)\n
+    {\n
+        Intent intent=new Intent(this, openingclass.class);\n
+        startActivity(intent);\n
+    }"
+                    android:textSize="17sp" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv9"
+                android:layout_marginTop="10dp"
+                android:text="For instance, the button below opens the previously learned activity page ."
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/samplebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv10"
+                android:layout_marginLeft="140dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="10dp"
+                android:onClick="namespace"
+                android:text="BUTTON" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

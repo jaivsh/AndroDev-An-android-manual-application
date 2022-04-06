@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashcode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XML :"
+            android:textSize="25sp"
+            android:textColor="#000e46"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#d1bd68">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;\n
+                    &lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;\n
+                xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;\n
+                xmlns:tools=&quot;http://schemas.android.com/tools&quot;\n
+                android:layout_width=&quot;match_parent&quot;\n
+                android:layout_height=&quot;match_parent&quot;\n
+                tools:context=&quot;.splashrun&quot;&gt;\n
+                \n
+                &lt;ImageView\n
+                    android:layout_width=&quot;90dp&quot;\n
+                    android:layout_height=&quot;100dp&quot;&quot;\n
+                    android:src=&quot;@drawable/code&quot;\n
+                    android:layout_centerInParent=&quot;true&quot; /&gt;
+
+                &lt;TextView\n
+                    android:layout_width=&quot;wrap_content&quot;\n
+                    android:layout_height=&quot;wrap_content&quot;\n
+                    android:text=&quot;This Is The Sample Splash Screen&quot;\n
+                    android:layout_centerHorizontal=&quot;true&quot;\n
+                    android:layout_alignParentBottom=&quot;true&quot;\n
+                    android:layout_marginBottom=&quot;150dp&quot;\n
+                    android:textSize=&quot;20sp&quot;\n
+                    android:textStyle=&quot;bold&quot;\n
+                    android:textColor=&quot;#000000&quot;/&gt;\n
+                    \n
+            &lt;/RelativeLayout&gt;"/>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java :"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000e46"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d1bd68"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:text="import android.content.Intent;\n
+import android.os.Handler;\n
+import android.support.v7.app.AppCompatActivity;\n
+import android.os.Bundle;\n
+\n
+public class splashrun extends AppCompatActivity {\n
+    private static int SPLASH_TIME_OUT=2500;\n
+\n
+    @Override\n
+    protected void onCreate(Bundle savedInstanceState) {\n
+        super.onCreate(savedInstanceState);\n
+        setContentView(R.layout.activity_splashrun);\n
+        new Handler().postDelayed(new Runnable() {\n
+            @Override\n
+            public void run() {\n
+                finish();\n
+            }\n
+        },SPLASH_TIME_OUT);\n
+    }\n
+}"/>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>

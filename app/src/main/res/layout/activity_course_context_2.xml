@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".course_context_2">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="#afffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Context 2:"
+    android:textColor="#9c000000"
+    android:textStyle="bold|italic"
+    android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Notifications"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/cc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#197ccc"
+        android:text="displaying notifications"
+        android:onClick="notification"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:text="UI elements"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        />
+    <Button
+        android:id="@+id/cc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#197ccc"
+        android:textColor="#ffffff"
+        android:layout_marginTop="4dp"
+        android:text="Android ui elements"
+        android:onClick="uie"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:text="Activities and Fragments"
+        android:textColor="#000000"
+        android:textSize="15sp"
+       android:layout_gravity="center"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/cc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#197ccc"
+        android:text="Creating Activities"
+        android:onClick="avt"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/cc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#197ccc"
+        android:text="Opening an activity via. button click"
+        android:onClick="activityclick"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/cc4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#197ccc"
+        android:text="About Intents"
+        android:onClick="intented"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/cc5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#197ccc"
+        android:text="about Fragments"
+        android:onClick="fragmented"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/cc6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#197ccc"
+        android:text="Passing data from one fragment to another"
+        android:onClick="fragmented1"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:text="MENU"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/cc7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#197ccc"
+        android:text="Menu"
+        android:onClick="menu"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/cc8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#197ccc"
+        android:text="Creating Menu"
+        android:onClick="menuc"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:text="Android Services"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/cc9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#197ccc"
+        android:text="About Services"
+        android:onClick="vice"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/cc10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#197ccc"
+        android:text="Service lifecycle"
+        android:onClick="vicec"
+        android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

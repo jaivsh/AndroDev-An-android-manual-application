@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setup">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Downloading and Installing Android Studio and it's Essentials:-"
+            android:textSize="20sp"
+            android:textColor="#ff0000"
+            android:textStyle="bold|italic|normal"
+            android:fontFamily="serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:lines="5"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Requirements:--(for PC to be Android compatible)\n 1. JDK 8.0 or later versions should be installed in the pc\n 2. Java Runtime Environment(JRE) "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:textColor="#18bbe4"
+            android:textSize="11dp"
+            android:text="Download android studio from here-https://developer.android.com/studio"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="50dp"
+            android:text=":-STEPS TO INSTALL ANDROID STUDIO:-"
+            android:layout_marginStart="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:fontFamily="serif"
+            android:text="1. Launch Android Studio.exe from your downloaded file for Android studio."/>
+        <ImageView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/setupimage"
+            android:layout_marginTop="280dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="480dp"
+            android:text="2. If your JDK is not detected automatically, then you have to specify it's directory. Then proceed further."/>
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="520dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/setupimage1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="750dp"
+            android:text="3. Select the install type and click next upto you have completed the installation."/>
+    </RelativeLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

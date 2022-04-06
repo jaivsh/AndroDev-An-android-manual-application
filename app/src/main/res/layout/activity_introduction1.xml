@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".introduction1">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Android Studio-"
+        android:textSize="20dp"
+        android:textColor="#ec0215"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just like any language has it's IDE for easier coding and interaction between user and language, Android, although consisted of XML, Java, Kotlin etc., has it's own ide called Android studio. It makes android apps easier to build and maintain. To be an android developer, one must become familier with android studio and it's features. "
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Open Handset Alliance-"
+            android:textColor="#ec0215"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="The open hand alliance is generally a group of 84 tech and mobile developing companies who came allied together to accelerate innovation in mobile phones and it's technology for a far better, richer, less expensive and more user friendly and user oriented experience."
+        android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:text="      -   The first commercially available android running mobile phone was HTC Dream, which launched into the market as T-Mobile G1 in USA, on October 22, 2008."/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/versioname"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Why Android??"
+            android:layout_marginTop="15dp"
+            android:textColor="#ec0215"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:text="Android is preferred over other OS because-
+                * It possesses open source nature
+*  Larger developers number and greater community
+*  Inter app integration
+*  Increased Marketing
+*  Reduced cost of Development
+*  Higher success ratio
+*  Rich development environment"/>
+    </LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

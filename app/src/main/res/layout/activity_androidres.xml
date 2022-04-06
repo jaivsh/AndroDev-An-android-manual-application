@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Androidres">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d4c5c5">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Res- App Resources"
+        android:textSize="20sp"
+        android:textColor="#0000f7"
+        android:fontFamily="serif"/>
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="50dp"
+            android:background="#0000f7" />
+
+        <View
+            android:id="@+id/divider14"
+            android:layout_width="2dp"
+            android:layout_height="650dp"
+            android:layout_marginTop="50dp"
+            android:background="#0000f7" />
+
+        <View
+            android:id="@+id/divider15"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="32dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This container contains all the non-code resources, such as XML layout resource files,bitmap images, color values, UI strings and more. The sub-directries of Res container are:- "
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/divider16"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="125dp"
+            android:background="#000000" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/resimage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="10dp"
+            android:text="Resource directories supported inside res directories:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="340dp"
+            android:textSize="12sp"
+            android:textColor="#e70a11"
+            android:text="animator/ -contains xml files that define animations.\n anim/       -contains XML files that define tweek animations\n color /      -contains XML files that state a list of colours\n drawable /-contains Bitmap files or basically images used in the application interface.\n mipmap / -contains drawable files for differient launcher icons\n layout /   -contains XML files that define user interface layout.\n menu /  - In this directory, files are saved in their raw form.\n xml /    - contains arbitary XML files that can be read at runtime by calling Resources.getXML(). \n font /     -contains font files that can be read at runtime. "/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

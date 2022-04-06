@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".storagetypes">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ec0b34">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stogare Options"
+        android:layout_marginLeft="90dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="#ff0000"
+        android:layout_marginStart="90dp" />
+    <View
+        android:id="@+id/divider45"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Internal Storage:-"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="By default, the data we save in the application are private to the application and other applications canot access them, nor the user can access this data. Uninstalling the application removes this data. \n\t\t\t\t\t The data stored can be text, image, audio, video or the resource files of different format.\n- Storage location- Internal Storage/Android/Data//data/(package name)/files folder.\n- To create and write data to the internal storage, \n 1. In the java file, call the openFileOutput(String filename, int mode) with name of the file and operating mode. This function will return a fileOutputStream. This stream will help to write the data into the internal storage.\n 2. Write to the file with write().\n 3. Close the stream with close() to terminate the stream and stop writing to the file.\n To read data from the Internal Storage, \n 1. Call the openFileInput(String filename, int mode) function and pass the filename to read.\n 2. Retrieve the data saved to internal storage with the help of read() function. This will read the data in bytes only.\n 3. Close the input stream with close() function."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="External Storage:-"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Just like internal storage, external storage too can be used to save the file's data in an external device such as Memory card, Flash Drive etc. The files saved to external storage are public and can be read and modified by anyone.\n For writing the data into the external storage, we need to require the permission to read or write files on external storage. This, we must add the following permission into our manifest file:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Second thing is to check weather an external device is connected to the device or not. For this, call getExternalStorageState() function to check weather external storage is available or not.\n 3. use getExternalStoragePublicDirectory(String type) to get he external storage directory for reading/writing from your app. These files are not removed even when the app gets uninstalled.\n Use fileInputStream and FileOutputStream to do the same operation as discussed above. To read from external storage, call FileInputStream and to write from External storage, call FileOutputStream function."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Cache Storage:-"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Cache is a temperory data storage in memory because it automatically gets deleted by the system if there occurs a shortage of memory.\n Storage Location- data/data/(package name)/cache folder.\n To store data from cache,\n 1. Use the function getCacheDir() to open a file that represents internal directory where your application should save temporary cache files. \n 2. Use the file class to create a file inside the cache folder.\n 3. Call openFileOutput(String str) with the name of the file.\n For retrieving data from the cache,\n 1. Get the refrence of the cache directory.\n 2. Get the file using File class by specifying it's name.\n 3. use fileInputStream to read data from the files."/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cache"/>
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

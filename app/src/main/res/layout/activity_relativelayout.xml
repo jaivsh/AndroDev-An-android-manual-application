@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".relativelayout">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Relative Layout"
+            android:textColor="#ff0000"
+            android:textSize="30sp"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold|italic"/>
+        <View
+            android:id="@+id/divider29"
+            android:layout_width="400dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Relative Layout organizes the children views based on their relation with one another,i.e. we can place a specific view anywhere with respect to another view in this viewgroup. This is certainly the most complicated layout, but the most useful one too. Also we need to define several properties to actually get the layout we want."/>
+        <View
+            android:id="@+id/dividder30"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Some attributes for views relative to the parent container are-\n android:layout_alignParentBottom- this places the bottom of the element into the bottom of the container\n android:layout_alignParentleft- this places the left of the element on the left side of container.\n android:layout_alignParentRight- this places the right of the element on the right side of the container.\n android:layout_alignParentTop- this places the top of element on the top of the container.\n android:layout_centerHorizontal- this centers the element horizontally within it's parent container.\n android:centerInParent- centers the element into the center of the container.\n android:layout_centerVertical- Centers the elemant vertically within it's parent container. "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Some attributes for views relative to other parent views are-\n android:layout_above- places the element above the specified view element.\n android:layout_below- places the element below the specified element.\n android:toLeftOf-places the element to the left side the specified element.\n android:toRightOf- places the element to the right side of the specified element."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Some relative layout attribites for alignment with other elements are-\n android:layout_alignBaseLine- Aligns the base of the new element to base of the specified element.\n android:layout_alignBottom- this aligns the bottom of the new element with the bottom of the speciffied aelement.\n android:alignTop- this places the top of the new element in alignment with the top of the specified element."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:text="A sample Relative layouut:"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;\n
+            &lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;\n
+                xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;\n
+                xmlns:tools=&quot;http://schemas.android.com/tools&quot;\n
+                android:layout_width=&quot;match_parent&quot;\n
+                android:layout_height=&quot;match_parent&quot;\n
+                tools:context=&quot;.MainActivity&quot;\n
+                tools:showIn=&quot;\@layout/activity_main&quot;&gt;\n
+                    \n
+                &lt;TextView\n
+                    android:id=&quot;\@+id/samplerel&quot;\n
+                    android:layout_width=&quot;wrap_content&quot;\n
+                    android:layout_height=&quot;wrap_content&quot;\n
+                    android:text=&quot;Hello World!&quot;\n
+                    android:textSize=&quot;30sp&quot;\n
+                    android:textColor=&quot;#571a81&quot;\n
+                    android:layout_marginTop=&quot;100dp&quot;/&gt;\n
+                &lt;TextView\n
+                    android:layout_below=&quot;\@+id/samplerel&quot;\n
+                    android:layout_width=&quot;wrap_content&quot;\n
+                    android:layout_height=&quot;wrap_content&quot;\n
+                    android:textSize=&quot;20sp&quot;\n
+                    android:textStyle=&quot;bold&quot;\n
+                    android:textColor=&quot;#000000&quot;\n
+                    android:text=&quot;Android is Fun!!!&quot;/&gt;\n
+                    \n
+            &lt;/RelativeLayout&gt;"/>
+        </HorizontalScrollView>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp"
+            android:src="@drawable/reltext"/>
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

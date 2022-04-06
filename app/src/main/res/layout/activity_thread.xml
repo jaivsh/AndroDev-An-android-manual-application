@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".thread">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#f7a306"
+        android:fontFamily="serif"
+        android:textColorHighlight="#8cbe3e3e"
+        android:text="Threads:-"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="A thread can be defined as sequential flow of control within a program. When an app is launched, the system creates a thread for sequential execution, called as \'main\' thread. It is also sometimes called as UI thread. All the app's components that run in the same process are dispached from the same thread. But when an app performs great amount of work, this single thread can lead to poor performance. In that case,you need to define separate threads for different app's components. If not so, from the user's point of view, the application seems to be hanged. In even worse situations, when the UI thread is blocked for more that 5 sec, an ANR( Application not responding) is triggered.\n It comes out that there are 2 rules to UI thread model for quality app's performance-\n 1. Do not let the UI thread be blocked,and\n 2. Do not access android UI toolkit from outside the UI thread. "/>
+
+    <View
+        android:id="@+id/divider58"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f7a306" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="->Threads in Java-"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text=" In Java, JVM allows creation of multiple threads and also allows to set the priority of these threads. So, threads with higher priority are executed first as compared to threads with lower priority."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="->Creating a thread-"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="There are two ways of creating the threads-\n\n 1. First way is to create a class that is a subclass of Thread. This subclass overrides the run() method of the thread. Then we need to call the thread"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="2. Second way is to create a class that extends Runnable interface. The class implements the run() method. Then, an object of class is created to pass as argument when creating the thread, and started."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="For declaring subclass of thread, use:"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#9ee1a40c">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:text="class sampleclass extends Thread {\n public void run() {\n //code to be executed in the thread.\n gslp();\n \t\t\n}\t\t\n}
+        private void gslp() {\n try{\n \t Thread.sleep(5000); }\n \t catch(InterruptedException e) {\n
+            e.printStackTrace();\n      \t}\n  \t}"/>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="for calling the thread :"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#9ee1a40c">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:text="sampleclass mthread=new MyThreadClass();\n  MyThread.start();"/>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="For creating a thread by declaring a class that implements Runnable interface, use the following:"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#9ee1a40c">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:text="class sampleclass implements Runnable {\n public void run() {\n //code to be executed in the thread.\n gslp();\n \t\t\n}\t\t\n}
+        private void gslp() {\n try{\n \t Thread.sleep(5000); }\n \t catch(InterruptedException e) {\n
+            e.printStackTrace();\n      \t}\n  \t}"/>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="For creating a thread and start it running,:"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#9ee1a40c">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:text="sampleclass mthread=new MyThreadClass();\n  new Thread(MyThreadClass).start();"/>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="In Java threads run for one time only and die after execution of the method."/>
+</LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

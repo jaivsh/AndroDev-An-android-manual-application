@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".beginners_level">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#55ffffff"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Context 1:"
+            android:textColor="#9c000000"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Android History"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bl1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:background="#197ccc"
+            android:fontFamily="monospace"
+            android:onClick="introduction"
+            android:text="Android- A brief introduction"
+            android:textColor="#ffffff"
+            android:textStyle="bold|normal" />
+
+        <Button
+            android:id="@+id/bl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp"
+            android:background="#197ccc"
+            android:fontFamily="monospace"
+            android:onClick="introduction1"
+            android:text="About- Android Studio"
+            android:textColor="#ffffff"
+            android:textStyle="bold|normal" />
+
+        <Button
+            android:id="@+id/bl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="142dp"
+            android:onClick="introduction2"
+            android:background="#197ccc"
+            android:text="Android Software stack and OS"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/bl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="195dp"
+            android:background="#197ccc"
+            android:onClick="introduction3"
+            android:text="ART AND Dalvik Virtual Machine"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Review"
+            android:textColor="#000000"
+            android:layout_marginTop="250dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/bl5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:background="#197ccc"
+            android:text="Setting up android"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/bl6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#197ccc"
+            android:layout_marginTop="322dp"
+            android:onClick="introduction5"
+            android:text="setting up android device to run android"
+            android:textColor="#ffffff"/>
+
+                <Button
+                    android:id="@+id/bl7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#197ccc"
+                    android:text="Android Project Structure and module"
+                    android:layout_marginTop="375dp"
+                    android:onClick="introduction6"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:id="@+id/bl8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#197ccc"
+                    android:onClick="introduction7"
+                    android:text="project structure- AndroidManifest.xml"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="428dp"/>
+                <Button
+                    android:id="@+id/bl9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#197ccc"
+                    android:textColor="#ffffff"
+                    android:text=" Android Java"
+                    android:layout_marginTop="480dp"
+                    android:onClick="introduction8"/>
+                <Button
+                    android:id="@+id/bl10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#197ccc"
+                    android:textColor="#ffffff"
+                    android:text=" Android Res"
+                    android:layout_marginTop="532dp"
+                    android:onClick="introduction9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/bl10"
+                    android:textSize="15sp"
+                    android:text=" UI Layouts, Views and Viewgroups"/>
+            <Button
+                android:id="@+id/bl11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#197ccc"
+                android:text="What is a viewGroup?"
+                android:onClick="introduction10"
+                android:textColor="#ffffff"
+                android:layout_marginTop="608dp"/>
+                <Button
+                    android:id="@+id/bl12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#197ccc"
+                    android:textColor="#ffffff"
+                    android:text="layouts and it's types"
+                    android:onClick="introduction11"
+                    android:layout_marginTop="661dp"/>
+            <Button
+                android:id="@+id/bl13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#197ccc"
+                android:textColor="#ffffff"
+                android:text="Linear Layout"
+                android:onClick="introduction12"
+                android:layout_marginTop="715dp"/>
+            <Button
+                android:id="@+id/bl14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#197ccc"
+                android:textColor="#ffffff"
+                android:onClick="introduction13"
+                android:text="Relative Layout"
+                android:layout_marginTop="770dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

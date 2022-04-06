@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manifestxml">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#d4c5c5"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#0000f7"
+        android:fontFamily="serif"
+        android:text="AndroidManifest.xml"/>
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="3dp"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="#0000f7" />
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="2dp"
+            android:layout_height="750dp"
+            android:layout_marginTop="50dp"
+            android:background="#0000f7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="This file contains the Android Manifest file which describes the essential features of the app, such as App icon, App name, activities, launcher activity and other building tools for the Android operating system and Google play."
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Among other declarations, manifest file is required to declare the following declarations:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#e1d3d3"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="215dp"
+            android:text="The package name of the application. When replaced with a unique Id by Gradle build files, this will serve as unique app identifier on system and on Google Play store.\n * All the add-ons of the pack(all files added for user interaction and management)\n * All the app permissions, and\n * Hardware and software features and component description "
+            android:layout_marginEnd="5dp" />
+       <HorizontalScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#9ee1a40c"
+           android:layout_marginTop="400dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp">
+           <TextView
+               android:id="@+id/codemanifest"
+               tools:ignore="MissingPrefix"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000000"
+               android:textSize="14sp"
+               android:text="&lt;?xml version=&quot;1.0&quot;encoding=&quot;utf-8&quot;?&gt;\n
+           &lt;manifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;\n
+               package=&quot;c.aarsh121exno11&quot; &gt;\n
+    &lt;application\n
+                   android:allowBackup=&quot;true&quot;\n
+                   android:icon=&quot;\@mipmap/ic_launcher&quot;\n
+                   android:label=&quot;\@string/app_name&quot;\n
+                   android:supportsRtl=&quot;true&quot;\n
+                   android:theme=&quot;\@style/AppTheme&quot; &gt;\n
+                   &lt;activity android:name=&quot;c.aarsh121.exno11.MainActivity&quot; &gt;\n
+                       &lt;intent-filter&gt;\n
+                           &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;\n
+                           &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;\n
+                       &lt;/intent-filter&gt;\n
+                   &lt;/activity&gt;\n
+                   &lt;receiver android:name=&quot;c.aarsh121.exno11.AlarmReceiver&quot; /&gt;\n
+               &lt;/application&gt;\n
+           &lt;/manifest&gt;"/>
+       </HorizontalScrollView>
+        <TextView
+            android:id="@+id/manifestb1"
+            android:layout_marginTop="740dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="App Components\n For each app component created, you must declare it in the Manifest.xml file."
+            android:layout_marginStart="10dp"
+            tools:ignore="NotSibling" />
+        <TextView
+            android:layout_below="@+id/manifestb1"
+            android:layout_width="wrap_content"
+            android:layout_height= "wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text=" * (activity)-for each activity subclass.\n * (services)- for each subclass of Services. * (receiver)- for each subclass of BroadcastReceiver\n * (provider)- for each subclass of ContentProvider"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

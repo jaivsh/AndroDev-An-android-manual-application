@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashcode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XML :"
+            android:textSize="25sp"
+            android:textColor="#000e46"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#d1bd68">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;\n
+                &lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;\n
+                xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;\n
+                xmlns:tools=&quot;http://schemas.android.com/tools&quot;\n
+                android:layout_width=&quot;match_parent&quot;\n
+                android:layout_height=&quot;match_parent&quot;\n
+                android:layout_margin=&quot;10dp&quot;\n
+                tools:context=&quot;.webview&quot;>\n
+                \n
+                &lt;WebView android:id=&quot;@+id/webViewsample&quot;\n
+                    android:layout_width=&quot;match_parent&quot;\n
+                    android:layout_height=&quot;match_parent&quot;/&gt;\n
+                ]n
+            &lt;/RelativeLayout&gt;"/>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java :"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000e46"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d1bd68"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:text="
+import android.support.v7.app.AppCompatActivity;\n
+import android.os.Bundle;\n
+import android.webkit.WebView;\n
+\n
+public class webview extends AppCompatActivity {\n
+\n
+    @Override\n
+    protected void onCreate(Bundle savedInstanceState) {\n
+        super.onCreate(savedInstanceState);\n
+        setContentView(R.layout.activity_webview);\n
+        WebView webView=(WebView)findViewById(R.id.webViewsample);\n
+        webView.loadUrl(&quot;https://www.google.com/&quot;);\n
+            }\n
+            }\n
+            "/>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".art_dvm">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is ART?"
+            android:textColor="#ef0707"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:text="ART(Android runtime) is a new Android runtime used by applications and some system services on Android. ART and Dalvik were originally created for android project specifically. This runtime runs Dex bytecode, so apps developed with Dalwik virtual machine(DVM) do not work for ART. However, some techniques that work for Dalwik do not work for ART. "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:lines="4"
+            android:textColor="#07ea47"
+            android:text="ART Features-\n Ahead-of-Time(AOT) compilation\n Improved Garbage collection \n Development and debugging improvements\n Reports problems"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text="What is DVM?"
+            android:textSize="18dp"
+            android:textColor="#e90d0d"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="275dp"
+            android:textColor="#000000"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:textColor="#000000"
+            android:text="For developing Android, the main language is Java and XML(for design and User Interaction). Java development Kit(JDK) will comlipe our Java code and it is going to produce a file called .class file. This file is known as Java Bytecode"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="370dp"
+            android:layout_marginLeft="30dp"
+            android:text="Bytecode is a platform independent(can be run on any device or platform) code that is used to convert source code into machine independent code that can easily be shared and executed ny the computer  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="450dp"
+            android:lines="4"
+            android:text="DVM takes single .dex file as input and generates the final machine code\n With upgade of Android to 2.2 froyo version, JIT compilation in dalvik was introduced by Google\n Till Android 5.0, Dalvik was the runtime use by Android which is being replaced by ART in later versions."/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:lines="20"
+           android:textColor="#000000"
+           android:layout_marginTop="540dp"
+           android:text="                       ART vs Dalvik/JIT vs AOT\n Android apps are deployed in Dalvik Bytecode,which is portable. In order to be run on the device, the app source code should be compiled to machine code. Dalvik is based on JIT compilation it means that each time we run the app, the source code we typed is translated to machine code at that particular moment. As we enhance the code, the system is going to convert the at present code to machine code, while the app is running. Since JIT compiles only a part of code, it has smaller memory footprint and uses less physical space on the device.\n
+            ART on the other hand, compiles the intermediate language, Dalvik bytecode, into binary code(system dependent). The whole code on the app will be pre-compiled on installation,thus removing the lag that we pre-compiled on our device. Less CPU usage results in less battery drain, which is a big plus point for portable devices in general."/>
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="243dp"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="530dp"
+            android:background="#000000" />
+
+
+    </RelativeLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

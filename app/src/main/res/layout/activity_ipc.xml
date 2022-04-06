@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ipc">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#f2a706"
+        android:text="Android Application Sandbox-"
+        android:fontFamily="serif"
+        android:textStyle="bold"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:id="@+id/divider60"
+            android:background="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:text="Application Sandboxing, also called as containerization, is a software development approach that limits the environment in which certain code can execute.\n The goal of sandboxing is to improve security by isolating an application to prevent it from outside malwares,system resources or other applications from interacting with the protected app."/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/divider61"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="How to achieve sandBoxing??"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Each android app is assigned a unique Linux USER ID and runs in separate process. However, Android Applications can share a common user ID by using android:sharedUserId attribute in manifest file. The condition is that they should be signed by the same certificate. Applications with same id can access ecah other's data and run on same process."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="35dp"
+            android:text="Android Inter-Process communication"
+            android:layout_marginStart="35dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="Communication between process boundaries is called as inter- process comminication. It can only be possible if the two app components share same User Id. Steps for inter-process communication:-\n 1. The send and recieve are synchronized,i.e. it looks like a method call from user's perspective.\n2. App 2 will need the installation information of app 1.\n 3. use getPackageManager() to send information to second application.\n 4. Call ApplicationInfo getApplicationInfo(String packagename, int flags) to receive information from first application."/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/divider62"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Some Mechanisms of Inter-Process communication are-\n IBinder\n Sockets\n Intents\n Activities\nRemote Procedural calls(RPC's)."/>
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

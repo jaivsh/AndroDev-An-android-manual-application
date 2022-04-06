@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".creating_menu">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ec0b34">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATING MENU"
+        android:layout_marginLeft="90dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="#ff0000"
+        android:layout_marginStart="90dp" />
+    <View
+        android:id="@+id/divider45"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Context menu:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="Steps for creating context menu-\n 1. Define the menu items in res/menu.xml(create the menu resource file in res if it is not present)\n2. In corresponding java class for which you are creating the menu for, override the CreateOptionsMenu(). Then use the menuInflater to inflate the menu resource into the menu.\n 3. Finally, define the click events for menu either by if-else-if ladder or switch case."
+            android:textColor="#000000"
+            android:fontFamily="serif"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Java  code for Context Menu:"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text=" String[] games={&quot;IGI&quot;,&quot;Mini Militia&quot;,&quot;GTA V&quot;,&quot;GTA SA&quot;,&quot;COC&quot;};\n
+        ArrayAdapter&lt;String&gt; adapter=new ArrayAdapter&lt;String&gt;(this, android.R.layout.simple_list_item_1,games);\n
+        listView.setAdapter(adapter);\n
+        registerForContextMenu(listView);\n}\n
+                    @Override\n
+    public void onCreateContextMenu(ContextMenu menu, View v,ContextMenu.ContextMenuInfo menuInfo)\n
+    {\n
+        super.onCreateContextMenu(menu,v,menuInfo);\n
+        menu.setHeaderTitle(&quot;Select the action&quot;);\n
+        menu.add(0,v.getId(),0,&quot;Play&quot;);\n
+        menu.add(0,v.getId(),0,&quot;uninstall&quot;);\n
+        menu.add(0,v.getId(),0,&quot;visit&quot;);\n
+    }\n
+    @Override\n
+    public boolean onContextItemSelected(MenuItem item)\n
+    {\n
+        if(item.getTitle()==&quot;Play&quot;)\n
+        {\n
+            Toast.makeText(this,&quot;Play is pressed&quot;,Toast.LENGTH_SHORT).show();\n
+        }\n
+        else if(item.getTitle()==&quot;uninstall&quot;)\n
+        {\n
+            Toast.makeText(this,&quot;uninstall is pressed&quot;,Toast.LENGTH_SHORT).show();\n
+        }\n
+        else if(item.getTitle()==&quot;visit&quot;)\n
+        {\n
+            Toast.makeText(this,&quot;visit is pressed&quot;,Toast.LENGTH_SHORT).show();\n
+        }\n
+        return true;\n
+    }"/>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="A sample context menu"/>
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_margin="2dp"
+                tools:ignore="NestedScrolling" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="long press any item for menu."/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Options menu:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:layout_marginTop="5dp"
+            android:text="Steps for creating options menu-\n 1. Define the menu items in res/menu.xml\n 2. Inflate the onCreateMenu and implement the onContextItemSelected().\n 3. Finally, define click events."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Java code for Options menu:"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="public class creating_menu extends AppCompatActivity {\n
+    @Override\n
+    protected void onCreate(Bundle savedInstanceState) {\n
+        super.onCreate(savedInstanceState);\n
+        setContentView(R.layout.activity_creating_menu);\n
+          @Override\n
+    public boolean onCreateOptionsMenu(Menu menu)\n
+    {\n
+        getMenuInflater().inflate(R.menu.menu_main,menu);\n
+        return true;\n
+    }\n
+    @Override\n
+    public boolean onOptionsItemSelected(MenuItem item)\n
+    {\n
+        switch(item.getItemId())\n
+        {\n
+            case R.id.item1:\n
+                Toast.makeText(this,&quot;Item 1 is clicked&quot;,Toast.LENGTH_SHORT).show();\n
+            return true;\n
+            case R.id.item2:\n
+            Toast.makeText(this,&quot;Item 2 is clicked&quot;,Toast.LENGTH_SHORT).show();\n
+            return true;\n
+            case R.id.item3:\n
+            Toast.makeText(this,&quot;Item 3 is clicked&quot;,Toast.LENGTH_SHORT).show();\n
+            return true;\n
+            default:\n
+            return super.onOptionsItemSelected(item);\n
+            }\n }"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="XML for menu_main.xml:"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="&lt;?xml version=&quot;1.0&quot;encoding=&quot;utf-8&quot;?&gt;\n
+            &lt;menu xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;\n
+                &lt;item android:id=&quot;\@+id/item1&quot; android:title=&quot;Item 1&quot;/&gt;\n
+                &lt;item android:id=&quot;\@+id/item2&quot; android:title=&quot;Item 2&quot;/&gt;\n
+                &lt;item android:id=&quot;\@+id/item&quot; android:title=&quot;Item 3&quot;/&gt;\n
+            &lt;/menu&gt;"/>
+        </HorizontalScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text="A sample options menu:\n Click the three dots appearing above in action bar."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Pop-up menu:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"
+            android:text="Steps for creating pop-up menu-\n 1. Define the menu items in res/menu.xml\n 2. To show a popup menu, the easiest way is to insert a button or imagebutton in XML file and defining the onCreate attribute that shows a popup menu.\n 3. On that method, define the click events in corresponding java file"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for LinearLayout :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="public class creating_menu extends AppCompatActivity {\n
+    Button btnpopupmenu;\n
+    @Override\n
+    protected void onCreate(Bundle savedInstanceState) {\n
+        super.onCreate(savedInstanceState);\n
+        setContentView(R.layout.activity_creating_menu);\n
+         btnpopupmenu=(Button)findViewById(R.id.popup);\n
+       btnpopupmenu.setOnClickListener(new View.OnClickListener() {\n
+           @Override\n
+           public void onClick(View v) {\n
+               PopupMenu popupMenu=new PopupMenu(creating_menu.this,btnpopupmenu);\n
+               popupMenu.getMenuInflater().inflate(R.menu.menu_main,popupMenu.getMenu());\n
+               popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {\n
+                   @Override\n
+                   public boolean onMenuItemClick(MenuItem item) {\n
+                       Toast.makeText(getApplicationContext(),&quot;Item clicked:&quot;+item.getTitle(),Toast.LENGTH_SHORT).show();\n
+                       return true;\n
+                   }\n
+               });\n
+               popupMenu.show();\n
+           }\n
+       });\n
+    }"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample Pop-up menu:"/>
+        <Button
+            android:id="@+id/popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="120dp"
+            android:text="CLICK ME"
+            android:layout_marginStart="120dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="Click the button for Pop-up menu options"/>
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

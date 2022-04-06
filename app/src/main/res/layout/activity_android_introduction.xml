@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".android_introduction">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="1dp"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/introtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textStyle="italic|bold"
+        android:text="INTRODUCTION TO ANDROID"
+        android:textColor="#ec0215"
+        android:textFontWeight="12sp"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/introtext1"
+        android:layout_below="@+id/introtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Android is generally a Linux based OS, with more advanced features. It is an open source product, with it's source code released by Google under open source licence. It is the fastest growing mobile OS since its release because of it's open source nature and large(preferably good) community of developers.
+            Nowadays, android is the most popular OS running in most of the devices around the globe(second one in Mac). Many versions of android are released to present date. These versions are valuable updates and each day android is becoming more stroger and flexible."
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_below="@+id/introtext1"
+        android:layout_width="350dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/versions" />
+    <TextView
+        android:layout_below="@+id/im1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="Android was founded by Andy Rubin, Rich Miner and Nick Sears in California in October 2003, well before the term smartphone was used by most of the public. It was created to develop smarter mobile devices more aware of it's owners preferences. Google bought android in 2005.!!!!"/>
+    </RelativeLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

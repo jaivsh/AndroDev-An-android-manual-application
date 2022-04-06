@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".datastorage">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ec0b34">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Data Storage"
+        android:layout_marginLeft="70dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="#ff0000"
+        android:layout_marginStart="70dp" />
+    <View
+        android:id="@+id/divider45"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="The most notable feature of an android application is it's capability to manage and store data. Android provides several options to save the persistent data of the application. The selection of storage device totally depends on our needs, of which option to select for storing data. Any mobile device app without a local storage is made to fetch all it's data from the server and loses all the data in case the network connection is disconnected fro the server.\n\t\t\t\t\t\t\t\t\t\t\t\ In order to save the persistent data, android provides us several options. It has three major storage devices, namely\n SQLite database\n Local file directory, and\n Preferences(using key value pairs)."/>
+
+        <View
+            android:id="@+id/divider56"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="->Paths for storing data:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="Internal storage- Stores the data in the device memory\n\n External storage- Stores the data in some external storage device such as USB drive etc..\n\n SQLite database- Stores the well organised and structured data in private self-creating database in the form of tables.\n\n Network- Store the application's data on the network service hosted by you."/>
+
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

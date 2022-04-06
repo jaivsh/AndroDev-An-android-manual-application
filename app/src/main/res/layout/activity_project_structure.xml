@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".project_structure">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f99500"
+        android:text="Android Project structure and Module"
+        android:textSize="30sp"
+        android:textStyle="normal"/>
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Before creating a new project in Android studio, we must understand some aspects of android project and it's compoments. Creating a new project already creates the necessary structure for design and logic work. The structure is present on the right side of project window."/>
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/projectview"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:text="As observable, the project section has various divisions. These are-"/>
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="270dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/structure"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Some important aspects of project Structure are-\n 1. It shows all project's build related configuration files in a top level gradle script group.\n 2. It shows all manifest files in a module level group.\n 3. Shows all the alternative resource files created by developer."/>
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/structure1"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/structure2"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f28b04"
+            android:textSize="25sp"
+            android:text="Module"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="A module is a collection of source files and build settings that allow us to divide our project into discrete units of functionality. It's a container for project's source files and resources, settings and Manifest file."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="To create a new module, Click file> New> New module"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="In the create menu box, following menu options are available:\n * Phone and tablet module\n * Android wear module\n * Android TV module,and \n * Android glass module\n  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0b2edf"
+            android:textSize="15sp"
+            android:text="Each of them creates required files for internal building and adding new source files for the corrosponding project."/>
+
+    </LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

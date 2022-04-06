@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advancedui">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="30sp"
+            android:text="UI Elements"
+            android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp" />
+        <View
+            android:id="@+id/divider51"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="SEEKBAR"
+            android:textColor="#55bf03"
+            android:layout_marginStart="150dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="A seekbar is an extension of the progressBar the extends the extension of thumb dragging,i.e. a user can drag the pointer left and right to set the value of current resources.\n Example of seekBar- the one we use for adjusting the brightness of our android mobile."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:text="To add a seekbar, use Seekbar attribute in XMl and define id, width and height witth other useful attributes.\n For inserting the seekbar, we need to define where to or for what property of the app should we be able to use it. So we need to implement several methods in Java file for it's working. These methods are-"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="public void onProgressChanged(Seekbar seekbar, int pv, Boolaen fromuser)- this method will be called if any change is made in the progress of the listener, or more specifically if the pointer of progressbar is shifter left or right.\n public void onStartTrackingTouch(Seekbar seekbar){....}- this method gets invoked at the start of user's touch event.\n public void onStopTrackingTouch(SeekBar seekbar){...}- This method is invoked at the end of user's touch event.\ngetMax()- gets the maximum value of seekbar programmatically.\n getProgress()- gets the current progress of the seekbar.\n "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for Seekbar :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="&lt;SeekBar\n
+            android:id=&quot;\@+id/seekbar&quot;\n
+            android:layout_width=&quot;match_parent&quot;\n
+            android:layout_height=&quot;wrap_content&quot;/&gt;"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Java code for corresponding methods in corresponding Java file :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="seekBar =(SeekBar)findViewById(R.id.sseekbar);\n
+        textView=(TextView)findViewById(R.id.sstex);\n
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {\n
+            \@Override\n
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {\n
+                textView.setTextSize(progress);\n
+            }\n
+            \@Override\n
+            public void onStartTrackingTouch(SeekBar seekBar) {\n
+            }\n
+            \@Override\n
+            public void onStopTrackingTouch(SeekBar seekBar) {\n
+            }\n
+        });\n
+    }\n"/>
+        </HorizontalScrollView>
+        <SeekBar
+            android:id="@+id/sseekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/sstex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="140dp"
+            android:textColor="#9e000dfd"
+            android:text="Learning is fun"/>
+        <View
+            android:id="@+id/divider52"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="WEBVIEW"
+            android:textColor="#55bf03"
+            android:layout_marginStart="150dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:text="A web View enables the application to display web pages inside the app, thus making the application as webapplication. If we want to access some file that is hosted on the server, you would need an internet connection. For this, add internect permission in the manifest file."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="->Enabling the Javascript:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="For enabling the javascript, use the following code in the Java file of that particular activity:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="-> Steps for creating webView:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="-add the WebView attribute in the XML file.\n- get a reference of this view in Java file.\n- Load the webview URL inside the webview using loadUrl() function."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Web view in XML :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="  &lt;WebView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;\n
+            android:layout_width=&quot;match_parent&quot;\n
+            android:layout_height=&quot;400dp&quot;\n
+            android:id=&quot;\@+id/sweb&quot;/&gt;"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="For opening any URL through webview, use following code in Java file :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="\twebView=(WebView)findViewById(R.id.sweb);\n
+            \t\twebView.loadUrl(&quot; any URL &quot;);"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text=" A sample webview:(opens the google webpage):"/>
+        <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/sweb"
+            android:layout_marginTop="10dp"
+            tools:ignore="WebViewLayout" />
+        <View
+            android:id="@+id/divider53"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="SEARCH VIEW"
+            android:textColor="#55bf03"
+            android:layout_marginStart="150dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="A searchView provides the user an interface to search for the required element among the search list to display the required option. When it is used in action bar, it has to be iconified by using setIconifiedByDefault(true)."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Steps for creating SearchView:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="1. Define the searchView view tag in XML.\n 2. Create a searchable history in corresponding Java file by using array of strings.\n3. Create a searchable activity in application's manifest file.\n 4. Get refrence of searchview and creater list in java. Then using searchview refrence name, define the onQueryTextListener(this) function.\n 5. Use getFilter() function in corrosponding method to get the required results. "/>
+
+        <View
+            android:id="@+id/divider54"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000000" />
+        <View
+            android:id="@+id/divider55"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000000" />
+
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

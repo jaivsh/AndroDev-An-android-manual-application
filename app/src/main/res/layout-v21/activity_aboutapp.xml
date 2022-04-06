@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    tools:context=".aboutapp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+
+        <TextView
+            android:id="@+id/longtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:text="This course is designed for someone intrested in Programming and developing android applications. Talking about the level in which one might reach after finishing the course, say a professional developer is in 100%, where he/she is developing apps, earning money, changing the world etc.. After this course, one can reach upto 70%, so he/she will easily be able to develop android applications and solve various tasks. This course covers three levels of learning android, i.e.,-"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_width="356dp"
+            android:layout_height="147dp"
+            android:layout_below="@+id/longtext"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/aboutimage" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignBottom="@+id/i1"
+            android:text=" Beginner's level- covers basic knowledge about android studio, how to install android studio, features and error handling. Layout part and data input is discussed here. It could be skipped by someone who somewhat knows prograaming of SQL and basic java can skip this part.
+            Course context II-covers about various functionalities, activities, intents, layout, buttons and palletts etc...
+            Course context III-covers other necessary topics such as events, database etc..
+            In fact, this includes all the parts taht is necessary for a newbie to learn to develop apps .. Happy learning!!!!!!!!!!!!!"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

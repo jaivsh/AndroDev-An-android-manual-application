@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".androidJava">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4c5c5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#0000f7"
+            android:fontFamily="serif"
+            android:text="Android Java"/>
+
+        <View
+            android:id="@+id/divider17"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+        <View
+            android:id="@+id/divider18"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#0000f7" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="This directory contains all the Java source code files, seperated by package names, including Junit test code. The Java code files serves as the logic part of the program where the code behind User Interaction is worked upon.  "
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="Java is a platform independent and robust prograaming language that is widely used for programming in different aspects of modern computing. The Java language is based on the features of OOP(object oriented programming) methodology which possesses all major features of OOP. These features are-\n Abstraction of data\n Encaptulation\n Polymorphism and,\n Inheritance. "
+            android:layout_marginStart="10dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/projectview"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="A sample MainActivity.java file:"
+            android:layout_marginTop="5dp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9ee1a40c"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+             <TextView
+            android:id="@+id/codemanifest"
+            tools:ignore="MissingPrefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+                 android:layout_marginTop="10dp"
+            android:textSize="17sp"
+                 android:text="package c.aarsh121.exno11;\n
+import android.support.v7.app.AppCompatActivity;\n
+import android.os.Bundle;\n
+import c.aarsh121exno11.R;\n
+public class sample extends AppCompatActivity {\n
+    @Override\n
+    protected void onCreate(Bundle savedInstanceState) {\n
+        super.onCreate(savedInstanceState);\n
+        setContentView(R.layout.activity_sample);\n
+    }\n
+}"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="\t\t\t\t\t\t\t\t\t\t\t When you create a new project, Android studio automatically creates a Java and XML file named MainActivity.java and Activity_main.xml. The main activity file represents the basic launcher activity of your app(altaugh you can change it in manifests file). We can have as many java and xml files in our project as required. "
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="The java directory can be basically be divided into 2 or 3 parts. The first part defined by project name contains all java source code files, the second and third one basically contains android and enumerated tests for the application"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

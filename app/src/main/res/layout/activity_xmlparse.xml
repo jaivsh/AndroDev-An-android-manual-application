@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".xmlparse">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XML Parsing"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp" />
+    <View
+        android:id="@+id/divider44"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Parsing means extracting the data from a tag-oriented document such as XML,HTML or any other format that follows certain well defined rules.\n Therefore it can be said that the piece of code that is extracted is called a parser."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="The XML DOM(Document Object Model) defines the properties and methods for editing the xml. Before an XML document is accessed, it must be loaded into DOM object."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginLeft="80dp"
+            android:text="Parsing a String text"/>
+        <View
+            android:id="@+id/divider48"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f90a0a" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="To parse a text string,\n\n1. define a string in XML.\n\n2. Create an XML Document object model(DOM) parser.\n\n3. The parser creates a new XML DOM object using text string. Thus, the string is easily parsed."/>
+        <View
+            android:id="@+id/divider45"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#ef0808" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Code for parsing XMl :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="InputStream i=getAssets().open(&quot;anyfile.xml&quot;);\n \tDocumentBuilderFactory dbf=DocumentbuilderFactory.newInstance();\n
+            Document doc=dBuilder.parse(is);\n \t\tElement e=doc.getDocumentelement();\n\t e.normalize();\n
+            NodeList nl=doc.getElementsBytagName(&quot;sometag&quot;);\n
+             for(int i-0;i&gt;nl.getLength();i++)\n\t\t{\n\t Node node=nList.item(i);\n
+            if(node.getNodeType()==Node.ELEMENT_NODE)   {\n Element element2=(Element)node;\n  \t\t}"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Note:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="- For string value, use getString(STRINGNAME) function\n- For boolean value,use getBoolean(BOOLEANNAME) function\n- For integer value, use getInt(INTEGERNAME) function\n- For float value, use getFloat(FLOATNAME) function."/>
+
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

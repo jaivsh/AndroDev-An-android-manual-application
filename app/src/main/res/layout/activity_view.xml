@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is a View?"
+        android:textColor="#ff0202"
+        android:fontFamily="serif"
+        android:textStyle="normal"
+        android:textSize="30sp"/>
+
+        <View
+            android:id="@+id/divider20"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="35dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="50dp"
+            android:text="A view is generally a rectangle on the screen that shows some content. It can be anything an app can display. It makes up the layout odd the screen."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:textSize="15sp"
+            android:textColor="#de0759"
+            android:text="What we see and interact in an app is called User Interface(UI)."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginStart="150dp"
+            android:textSize="23sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="View"/>
+
+        <View
+            android:id="@+id/divider21"
+            android:layout_width="1dp"
+            android:layout_height="700dp"
+            android:layout_marginTop="50dp"
+            android:background="#aa000000" />
+
+        <View
+            android:id="@+id/divider22"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="170dp"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/divider23"
+            android:layout_width="200dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="75dp"
+            android:layout_below="@+id/divider22"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/divider24"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/divider23"
+            android:layout_marginLeft="75dp"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/divider25"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/divider23"
+            android:layout_marginLeft="275dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider24"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="TextView"
+            android:layout_marginLeft="55dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider25"
+            android:textStyle="bold"
+            android:text="ImageView"
+            android:layout_marginLeft="235dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:text="Altaugh there are various views in Android,the TextView and ImageView are main views used frequently in Android studio"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="370dp"
+            android:text="XML-Extensible Markup Language\nXMLV-XML Visualizer"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:textSize="20sp"
+            android:textColor="#ff0000"
+            android:text="What is a viewGroup?"
+            android:layout_marginLeft="70sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:text="A viewGroup is generally a group of various views. ChildViews are the views inside a viewGroup and the viewgroup is generally referred as parent group.Some common Viewgroups are-\n Linear Layout\n Relative Layout\n Frame Layout\n Table Layout\n ScrollVIew                                  etc....."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600dp"
+            android:textColor="#ff0000"
+            android:textSize="16sp"
+            android:text="About Android Palette:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="650dp"
+            android:text="Android palette is a helper tool developed to extract prominent UI elements into your project. There are various options inside the palette box in the design section of the xml file that you create or already present in your project. Scroll down the list of various palette options and implement them in your xml file to understand their objectives."/>
+    </RelativeLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

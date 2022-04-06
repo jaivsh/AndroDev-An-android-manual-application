@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".intent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#ec0b34">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:text="Intents"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginLeft="140dp"/>
+    <View
+        android:id="@+id/divider43"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="An intent is a messaging object that is used to request actions from one app component to another app component. It is used as a way of communication between different app components. The most intresting and useful feature is that the component can be present in the same app or another app."/>
+    <View
+        android:id="@+id/divider44"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text=" -> Intent types-"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:text="1. Explicit Intents- These are mostly used to start an app component in your own app, and not on another app. These intents specify which app will satisfy the intent. They supply or carry the package's name.\n\n 2. Implicit Intents- These intents declare a general action to be performed. That's why they can be used with other apps as well for inter-activity communication."/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/intentfilter"
+        android:contentDescription="intent filters" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:text="-> Intent Filters-"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="An intent filter is an expression in the app's manifest file that specify the type of intent that the component would like to receive."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:text="-> Intent Resolution-"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="It is the process of matching an intent against all of the descriptions and issues in the installed component. In the process, if intent matches the intent filter, the Android system finds the appropriate component to start and delivers it to the object of intent it found. There are three pieces of information in the intent that are used for resolution-\n 1. Action\n2.Data(URI and Data type)\n3.Category."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Action: This is the mandatory part of information names the action an android component should take on receiving the intent, or is being notified to the system and the action that has already taken place. Android system has defined a number of action contents.\nData: Contains the URI(Uniform resource identifier) of data. For correctly matching the intent for a suitable component and defining the data type helps.\n Category: This is the optional part and it defines the category of the compoment that would be handled by the intent."/>
+
+</LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

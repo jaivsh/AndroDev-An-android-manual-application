@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#ff0000"
+        android:text="Android UI elements"
+        android:layout_marginLeft="60sp"
+        android:layout_marginStart="60sp" />
+        <View
+            android:id="@+id/divider31"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:text="User interactive elements are provided by android studio that are essential compoments for user-app interface.\n Android provides a large variety of widgets to use in UI.Adding them is as simple as adding an XML element."/>
+        <View
+            android:id="@+id/divider32"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dp"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00d200"
+            android:textSize="20sp"
+            android:text="BUTTON"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:layout_marginStart="150dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="Android buttons are essential way of communication between different app compoments. They are sensible to touch.In Android studio, buttons are of two types,i.e. \n 1. Button with text\n 2. Button with images"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="For inserting a button, the easiest method is to drag it from button palette in design XML compoment.The working of the button is completed in Java, in following steps:\n 1. Creating the instance of button class, by passing the current context as this.\n 2. Setting the activity that the button should do(could be opening activity, frame or displaying a text)\n 3.Creating the object of the viewgroup in which the button is to be placed.\n 4. Finding the layout by using findViewById() method.\n 5. Add the button to the layout by desired method. "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for button :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="&lt;Button\n
+        android:id=&quot;\@+id/ssb&quot;\n
+            android:layout_width=&quot;wrap_content&quot;\n
+            android:layout_height=&quot;wrap_content&quot;\n
+            android:text=&quot;Button&quot;\n
+            android:textColor=&quot;#000000&quot;/&gt;"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="To add a button programmatically, use the following code to implement Button in the corrosponding activity: :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="Button button=(Button)findViewById(R.id.btnid);\n
+        RelativeLayout relativeLayout=(RelativeLayout)findViewById(R.id.layout);\n
+        relativeLayout.addView(button);"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="Sample text Button:"/>
+        <Button
+            android:id="@+id/sampleb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:text="BUTTON"
+            android:layout_marginStart="140dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Sample image button is:"/>
+        <ImageButton
+            android:id="@+id/sampleib"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:onClick="samplebutton"
+            android:layout_marginLeft="140dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginStart="140dp" />
+        <View
+            android:id="@+id/divider33"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dp"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00d200"
+            android:textSize="20sp"
+            android:text="TEXTFIELD"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="A textfield allows the user to type text into your app. The text can be single or multi-lined. Touching the textfield makes keyboard appear for typing, cut,copy or paste or auto-completion."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="3dp"
+            android:text="Using the attribute android:inputType, one can choose between buttons in keyboard to input the text from.Some common values for this attribute are-\n 'text'-Normal text keyboard\n 'textUri'-Normal text keyboard with / button\n 'number'- numeric keyboard\n 'phone'- phone based keypad\n 'textEmailAddress'-Normal keypad with @character."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for Textfield :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="&lt;EditText android:id=&quot;\@+id/sampleedittext&quot;\n
+            android:layout_width=&quot;wrap_content&quot;\n
+            android:layout_height=&quot;wrap_content&quot;\n
+            android:onClick=&quot;function_name&quot;\n
+            android:hint=&quot;Type anything&quot;\n
+            android:inputType=&quot;text&quot;\n
+            android:imeOptions=&quot;actionDone&quot;/&gt;"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:text="keyboard actions- The android:imeOptions attribute specifies an action to be made when user completes their input. It specifies the button that appears in place of carriage return key."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample java code to listen from the Keyboard action attribite:"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="EditText et=(Edittext)findViewById(R.id.sampleedittext);\n
+                et.setOnEditorActionListener(new OnEditorActionListener() {\n
+                \@ Override\n public boolean onEditorAction(TextView w,int id, KeyEvnet evnt) {\n
+                boolean h=false;\n if(id==EditorInfo.IME_ACTION_SEND) {\n sendMessage()\n h=true;\n }\n
+                return handled;\n}\n});"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="A sample textfield:"/>
+        <EditText android:id="@+id/sampleedittext"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            android:onClick="stf"
+            android:hint="Type anything"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+        <View
+            android:id="@+id/divider35"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dp"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="#00d200"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:text="TOGGLE BUTTON"
+            android:layout_marginStart="150dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A toggle allows the user to toggle between two different states. The user created required method in Java is used to handle he toggle button ."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for ToggleButton :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text=" &lt;ToggleButton\n
+            android:id=&quot;\@+id/stb&quot;\n
+ android:layout_width=&quot;wrap_content&quot;\n
+            android:layout_height=&quot;wrap_content&quot;\n
+            android:text=&quot;Toggle Button&quot;\n
+            android:onClick=&quot;toggle&quot;/&gt;"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="OnClick method for handling click event in Java :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:text=" public void toggle(View view)\n
+    {\n
+        boolean checked=((ToggleButton)view).isChecked();\n
+        if(checked)\n
+        {\n
+            Toast.makeText(this,&quot;Toggle button on&quot;,Toast.LENGTH_SHORT).show();\n
+        }\n
+        else\n
+        {\n
+            Toast.makeText(this,&quot;Toggle button off&quot;,Toast.LENGTH_SHORT).show();\n
+        }"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="A sample toggle button:"/>
+        <ToggleButton
+            android:id="@+id/stb"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toggle Button"
+            android:onClick="toggle"/>
+        <View
+            android:id="@+id/divider36"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dp"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00d200"
+            android:textSize="20sp"
+            android:text="IMAGE SWITCHER"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:layout_marginStart="140dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Android image switcher, a subclass of Android View Switcher, switches smoothly between one image to another image with some defined animation."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Note- In this element, the views added to image switcher must be image views."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Steps for implementing imageswitcher-\n 1. Firstly, define the imageswitcher in XML\n 2. Open the corrosponding java file and create an instance of this XML compoment\n 3. Then add the viewFactory interface and implement unimplemented method that returns imageview.\n 4. In last step, implement animations through Animation class."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for ImageSwitcher :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="&lt;ImageSwitcher\n android:id=&quot;\@+id/imgswitcher&quot;\n
+            android:layout_width=&quot;wrap_content&quot;\n android:layout_height=&quot;wrap_content&quot;\n
+               &lt;/ImageSwitcher &gt;"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Java code for implementation of method returning ImageView :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="  private ImageSwitcher img;\n
+img=(ImageSwitcher)findViewById(R.id.imgswitcher);\n
+        img.setImageResource(R.darwable.ic_guide);\n
+        img.setFactory(new ViewFactory() {\n
+public view makeView(){\n
+        ImageView mv=new ImageView(getApplicationContext());\n
+        return mv;\n
+        }\n
+        });"/>
+        </HorizontalScrollView>
+        <View
+        android:id="@+id/divider37"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="3dp"
+        android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00d200"
+            android:textSize="20sp"
+            android:text="Rating Bar"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:layout_marginStart="140dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="A rating bar displays the rating of a programme or an activity in stars. It is an extension of SeekBar and ProgressBar\n Rating bar will show the number of stars if layout width is set to wrap content(other width options are unpredictable. The getRating() method of rating bar class returns the rating number."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Steps for creating Rating Bar-\n1. Firstly, define the RatingBar attribute in XML\n 2. Get the refrence of the RatingBar attribute of XML in corresponding Java file \n 3. Set the click event so that whenever the user changes the rating, the corrosponding action is to be taken."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for Rating Bar :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="&lt;RatingBar\n
+            android:id=&quot;\@+id/srating&quot;\n
+            android:layout_width=&quot;wrap_content&quot;\n
+            android:layout_height=&quot;wrap_content&quot;\n
+            android:numStars=&quot;8&quot;\n
+            android:rating=&quot;7.5&quot; /&gt;"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for LinearLayout :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="RatingBar rb=(RatingBar)findViewById(R.id.srating);\n rb.setRatingBarChangeListener(new RatingBar.OnRatingChangeListener(){\n
+                @Override\n public voif onRatingChanged(RatingBar rb,float rtng, boolean tf){\n
+                    //put your code here\n}\n});"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="A sample rating bar-"/>
+
+        <RatingBar
+            android:id="@+id/srating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="8"
+            android:rating="7.5" />
+        <View
+            android:id="@+id/divider38"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dp"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00d200"
+            android:textSize="20sp"
+            android:text="TIME PICKER"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:layout_marginStart="140dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Android time picker allows us to select the time in AM/PM mode. The time picker is generally round of the shape of a clock. Android.widget.TimePicker is the subclass of FrameLayout class."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:text="Object-->View-->ViewGroup-->FrameLayout-->TimePicker."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Some of the methods commonly implemented in Java file of TimePicker attribute are:\n getCurrentMinute(): gets the current minute from a timepicker\n getCurrentHour(): gets the current hour from a timepicker\n is24hourView(): This checks the current mode of the timepicker. Returns true if the current format is 24 hour else returns false.\n setCureentHour(int): sets the current hour to what integer vales it gets as parameter in time picker.\n setCurrentMinute(int): sets the current minute to what integer parameter it gets in time picker."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for Time Picker :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text=" &lt;TimePicker\n
+            android:id=&quot;\@+id/tstime&quot;\n
+            android:layout_width=&quot;330dp&quot;\n
+            android:layout_height=&quot;wrap_content&quot;/&gt;"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Java code for displaying current time in a toast :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text=" TimePicker tp=(TimePicker)findViewById(R.id.tstime);\n
+        tp.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {\n
+            @Override\n
+            public void onTimeChanged(TimePicker view, int i, int i1) {\n
+                Toast.makeText(getApplicationContext(),&quot;Time is:&quot;+i+&quot;:&quot;+i1,Toast.LENGTH_SHORT).show();\n
+            }\n
+        });"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample time picker is:"/>
+        <TimePicker
+            android:id="@+id/tstime"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp" />
+        <View
+            android:id="@+id/divider39"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dp"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00d200"
+            android:textSize="20sp"
+            android:text="DATE PICKER"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:layout_marginStart="140dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Android date picker allows you to select the date which consist of month, year and day.\n The android datepicker is the subclass of FrameLayout class."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Object-->View-->ViewGroup-->FrameLayout-->DatePicker"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Some of the methods commonly implemented in corrosponding java file of datepicker are-\n getDayOfMonth(): This method is used o get the selected day of the month from a datepicker.\n getMonth(int): This method is used to get the selected month from a datepicker.\n getYear(int): This method is used to get the selected year from a datepicker."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for Date Picker :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="&lt;DatePicker\n
+            android:layout_width=&quot;320dp&quot;\n
+            android:layout_height=&quot;wrap_content&quot;/&gt;"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="A sample datepicker is:"/>
+        <DatePicker
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp" />
+        <View
+            android:id="@+id/divider40"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dp"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00d200"
+            android:textSize="20sp"
+            android:text="RADIO BUTTON"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:layout_marginStart="140dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="Radio Button allows the user to select one option from a list. Since there can be more that one option, so we need to define all our Radio buttons inside the radio group in XML. The benefit of grouping is that the system understands that only ine option could be selected from the list."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample XML code for Radio Button :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="&lt;RadioGroup\n
+            android:layout_width=&quot;wrap_content&quot;\n
+            android:layout_height=&quot;wrap_content&quot;\n
+            android:layout_marginTop=&quot;10dp&quot;\n
+            android:layout_marginLeft=&quot;140dp&quot;&gt;\n
+            &lt;RadioButton\n
+                android:layout_width=&quot;wrap_content&quot;\n
+                android:layout_height=&quot;wrap_content&quot;\n
+                android:text=&quot;Coffee&quot;/&gt;\n
+            &lt;RadioButton\n
+                android:layout_width=&quot;wrap_content&quot;\n
+                android:layout_height=&quot;wrap_content&quot;\n
+                android:text=&quot;Tea&quot;/&gt;\n
+            &lt;RadioButton\n
+                android:layout_width=&quot;wrap_content&quot;\n
+                android:layout_height=&quot;wrap_content&quot;\n
+                android:text=&quot;Fanta&quot;/&gt;\n
+        &lt;/RadioGroup&gt;"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A OnClick method(s) for handling the click-events are :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="public void OnRadioButtonClicked(View view) {\n
+                boolean check=((RadioButton) view).isChecked();\n switch(view.getId())  {\n
+                case R.id.b1\: if(checked)\n //code for button1\n break; \n
+                case R.id.b2\: if(checked)\n //code for button2\n break; \n
+                case R.id.b3\: if(checked)\n //code for button3\n break; \n}\n}"/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="A sample RadioGroup is:"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginStart="140dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coffee"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tea"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fanta"/>
+        </RadioGroup>
+        <View
+            android:id="@+id/divider41"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dp"
+            android:background="#000000"/>
+        <View
+            android:id="@+id/divider42"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dp"
+            android:background="#000000"/>
+
+</LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

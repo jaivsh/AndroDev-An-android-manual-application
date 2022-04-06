@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".android_device">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:text="ANDROID DEVICE SETUP"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:text="This section includes setting up the device that you will need to install or run your android application upon. There are two types of devices on which we can run our application, namely Virtual device and an Android operating smartphone(that we use in our daily life). For the second option, you have to open developer options in your smartphone. For this, "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lines="6"
+            android:textSize="15sp"
+            android:text="1. Go to settings\n 2. Navigate to about phone and then build number\n 3. Tap the build number 7 times.\n 4. Open developer options, enable them and enable the USB debugging option in the list of options.\n Congrats, you are now a developer"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/debugging"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f40101"
+            android:lines="3"
+            android:textSize="16sp"
+            android:textStyle="bold|normal"
+            android:text="Now your android device is ready to load applications from android studio.\n For virtual device,"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:text="Click on the run button in Android studio, the one on the upper  corner and click on create a new Virtual device. Select a proper definition and click next. Then from servers, it will display a system image. Download and install it. That's all!!!!!"/>
+
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".linearlayout">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Linear Layout"
+            android:textColor="#ff0000"
+            android:textSize="30sp"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold|italic"/>
+
+        <View
+            android:id="@+id/divider28"
+            android:layout_width="400dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Linear Layout is a viewgroup that aligns it's children views into a single row or column. This choice depends on the orientation attribute in Linear Layout."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0d6ce1"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="Attribite:\t android:orientation=vertical or\n \t \t\t\t\t\tandroid:orientation=horizontal" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/llori"
+            android:scaleType="fitXY"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="A sample XML code for LinearLayout :"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9ee1a40c">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;\n
+            &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;\n
+                xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;\n
+                xmlns:tools=&quot;http://schemas.android.com/tools&quot;\n
+                android:layout_width=&quot;match_parent&quot;\n
+                android:layout_height=&quot;match_parent&quot;\n
+                tools:context=&quot;.MainActivity&quot;\n
+                tools:showIn=&quot;\@layout/activity_main&quot;&gt;\n
+                    \n
+                &lt;TextView\n
+                    android:layout_width=&quot;wrap_content&quot;\n
+                    android:layout_height=&quot;wrap_content&quot;\n
+                    android:text=&quot;Hello World!&quot;\n
+                    app:layout_constraintBottom_toBottomOf=&quot;parent&quot;\n
+                    app:layout_constraintLeft_toLeftOf=&quot;parent&quot;\n
+                    app:layout_constraintRight_toRightOf=&quot;parent&quot;\n
+                    app:layout_constraintTop_toTopOf=&quot;parent&quot; /&gt;\n
+                &quot;TextView\n
+                    android:layout_width=&quot;wrap_content&quot;\n
+                    android:layout_height=&quot;wrap_content&quot;\n
+                    android:textSize=&quot;20sp&quot;\n
+                    android:textStyle=&quot;bold&quot;\n
+                    android:textColor=&quot;#000000&quot;\n
+                    android:text=&quot;Android is Fun!!!&quot;&quot;/&gt;
+                    \n
+            &lt;/LinearLayout&gt;"/>
+        </HorizontalScrollView>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="350dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/textview"
+            android:layout_marginStart="110dp" />
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

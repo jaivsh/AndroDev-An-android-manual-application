@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".service">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Service"
+            android:layout_marginLeft="150dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="25sp"
+            android:textColor="#ff0000"
+            android:layout_marginStart="100dp" />
+        <View
+            android:id="@+id/divider45"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:text="A service is a long running task or process that does not require user interaction. A service usually runs in background to avoid screen consumption during usage of the app.For instance, playing music in background mode, handling network transactions etc.. A service does'nt have any UI.\n The android.app.service is a subclass of ContextWrapper class."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:text="Declaring a service in Manifest file:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:text="We need to define a service in AndroidManifest.xml file just as we do in the case of activities. Just use the (service)and (/service) tag to declare it in the manifest file with required attributes."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:text="Starting a service:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="We can start a service from an activity or other app's component by passing an Intent to startService() or startForegroundService() function. We can say that a service is started when an application component starts it by calling startService() function. Once a service is started, it can run in background indefinitely unitil the component from where the service is started is destroyed. Usually, a service does'nt return any value and performs single activity, but we can make it to perform as many activities as required. Then the given operation is over, it stops itself."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:text="Creating a bound service:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="A bound service binds the application's components by calling bindService() function. This services does'nt allow the compoments to start it by calling startService() function. By creating bound applications, we expose some of the app's functionality to other applications through IPC(interprocess communication). To create a bound service, we must define an interface that specifies how a clint can communicate with the service. Also, the interface must be the implementation of IBinder and the service must return from onBind() call method."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:text="Running a service in foreground:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="A foreground service is the service of which the user is aware of. This service must provide a notification to the status bar, which is placed under the Ongoing heading. To run the service in foreground, call startForeground() function. It takes two parameters, an integer that uniquely defines the notifications and Notification for the status bar. To remove the service from the foreground, call stopForeground() method."/>
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

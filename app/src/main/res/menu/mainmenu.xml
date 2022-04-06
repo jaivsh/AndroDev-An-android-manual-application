@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mm1"
+        android:title="Rate" />
+    <item android:id="@+id/mm2"
+        android:title="Share"/>
+    <item android:id="@+id/mm3"
+        android:title="Feedback"/>
+    <item android:id="@+id/mm4"
+        android:title="Privacy Policy"/>
+
+</menu>
